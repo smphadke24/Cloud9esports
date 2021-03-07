@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,21 +84,241 @@
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="77.678571428571431"/>
         </scene>
-        <!--Competitor HomeVC-->
+        <!--Cloud9 Esports-->
         <scene sceneID="vfX-fn-16Z">
             <objects>
                 <viewController id="HgP-Wc-Phk" customClass="CompetitorHomeVC" customModule="Cloud9_esports" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vyh-vC-YjP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsd-9A-U8L">
+                                <rect key="frame" x="20" y="109" width="210" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ufb-mv-8K3">
+                                <rect key="frame" x="20" y="195" width="374" height="681"/>
+                                <color key="backgroundColor" red="0.25490196078431371" green="0.23529411764705882" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.25490196079999999" green="0.23529411759999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.27946674119999998" green="0.27204778730000001" blue="0.63325766859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.27946674119999998" green="0.27204778730000001" blue="0.63325766859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.27946674119999998" green="0.27204778730000001" blue="0.63325766859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="d6T-ou-FWv"/>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.23529411759999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ufb-mv-8K3" firstAttribute="leading" secondItem="d6T-ou-FWv" secondAttribute="leading" constant="20" id="Dbc-y5-hWN"/>
+                            <constraint firstItem="ufb-mv-8K3" firstAttribute="top" secondItem="Vyh-vC-YjP" secondAttribute="top" constant="195" id="S2K-H5-suo"/>
+                            <constraint firstItem="d6T-ou-FWv" firstAttribute="trailing" secondItem="ufb-mv-8K3" secondAttribute="trailing" constant="20" id="Zoi-0x-T7n"/>
+                            <constraint firstAttribute="bottom" secondItem="ufb-mv-8K3" secondAttribute="bottom" constant="20" id="uGa-SF-cL5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Tj8-7E-gu4"/>
+                    <navigationItem key="navigationItem" title="Cloud9 Esports" id="Tj8-7E-gu4"/>
+                    <connections>
+                        <outlet property="tableView" destination="ufb-mv-8K3" id="khc-Dt-qSA"/>
+                        <segue destination="mZd-OY-bKk" kind="presentation" identifier="signUp" id="9Z5-16-VCJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1GH-gj-Yhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2126.0869565217395" y="77.678571428571431"/>
+        </scene>
+        <!--SurveyVC-->
+        <scene sceneID="K26-9F-bNe">
+            <objects>
+                <viewController id="mZd-OY-bKk" customClass="SurveyVC" customModule="Cloud9_esports" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x74-2n-kfS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX Tourney Cup" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-nr-k59">
+                                <rect key="frame" x="20" y="20" width="365" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-zK-exT">
+                                <rect key="frame" x="0.0" y="106" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMr-Sk-Hw3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your first name?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJq-Pd-QWU">
+                                                <rect key="frame" x="22" y="17" width="248" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196078431373" green="0.77254901960784317" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="smi-yJ-mcY">
+                                                <rect key="frame" x="22" y="74" width="371" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.29019607843137252" green="0.27843137254901962" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your last name?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOn-aY-bcm">
+                                                <rect key="frame" x="22" y="144" width="245" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOX-ga-fSW">
+                                                <rect key="frame" x="22" y="201" width="371" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your gender?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRt-I9-xlR">
+                                                <rect key="frame" x="22" y="272" width="219" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LAl-m4-Sbs">
+                                                <rect key="frame" x="22" y="331" width="371" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Male"/>
+                                                    <segment title="Female"/>
+                                                    <segment title="Other"/>
+                                                    <segment title="Prefer not to say"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your age?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-L9-TPM">
+                                                <rect key="frame" x="22" y="404" width="184" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1BA-00-TIt">
+                                                <rect key="frame" x="22" y="463" width="371" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="1-12"/>
+                                                    <segment title="13-17"/>
+                                                    <segment title="18-30"/>
+                                                    <segment title="30-50"/>
+                                                    <segment title="50+"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your Discord username?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an2-OK-CwJ">
+                                                <rect key="frame" x="22" y="531" width="333" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-QC-kwn">
+                                                <rect key="frame" x="22" y="588" width="371" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your XXX ID?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xl-tJ-5Lg">
+                                                <rect key="frame" x="22" y="660" width="220" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-zG-z8W">
+                                                <rect key="frame" x="22" y="717" width="371" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you accept our terms and conditions?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-Tc-gwJ">
+                                                <rect key="frame" x="22" y="793" width="371" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" red="0.65490196079999996" green="0.7725490196" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-GJ-Akd">
+                                                <rect key="frame" x="22" y="877" width="371" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Yes"/>
+                                                    <segment title="No"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </segmentedControl>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DZ-EL-R5R">
+                                                <rect key="frame" x="59" y="952" width="296" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.64841900289999999" green="0.76580185759999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUp:" destination="mZd-OY-bKk" eventType="touchUpInside" id="oJw-z5-JR5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.23529411759999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1200" id="lXN-yY-7WD"/>
+                                            <constraint firstAttribute="height" constant="1500" id="uM9-oG-6r2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OMr-Sk-Hw3" secondAttribute="trailing" id="XJA-zb-FGq"/>
+                                    <constraint firstAttribute="bottom" secondItem="OMr-Sk-Hw3" secondAttribute="bottom" id="fYG-AN-cjp"/>
+                                    <constraint firstItem="OMr-Sk-Hw3" firstAttribute="leading" secondItem="MUO-zK-exT" secondAttribute="leading" id="vy1-3Y-LbB"/>
+                                    <constraint firstItem="OMr-Sk-Hw3" firstAttribute="top" secondItem="MUO-zK-exT" secondAttribute="top" id="z23-rm-kpZ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ph-I8-RB7"/>
+                        <color key="backgroundColor" red="0.25490196078431371" green="0.23529411764705882" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MUO-zK-exT" firstAttribute="leading" secondItem="9ph-I8-RB7" secondAttribute="leading" id="NeQ-w7-Twt"/>
+                            <constraint firstItem="OMr-Sk-Hw3" firstAttribute="width" secondItem="x74-2n-kfS" secondAttribute="width" id="beA-6D-yqT"/>
+                            <constraint firstItem="MUO-zK-exT" firstAttribute="trailing" secondItem="9ph-I8-RB7" secondAttribute="trailing" id="ctD-Wc-cCe"/>
+                            <constraint firstItem="MUO-zK-exT" firstAttribute="top" secondItem="x74-2n-kfS" secondAttribute="top" constant="106" id="eqL-ME-TL3"/>
+                            <constraint firstAttribute="bottom" secondItem="MUO-zK-exT" secondAttribute="bottom" id="j9t-xf-ylw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageControl" destination="1BA-00-TIt" id="bSm-t0-SIa"/>
+                        <outlet property="discord" destination="lQJ-QC-kwn" id="Hg0-Q5-uWe"/>
+                        <outlet property="genderControl" destination="LAl-m4-Sbs" id="iWe-sh-KiD"/>
+                        <outlet property="id" destination="dGt-zG-z8W" id="pIA-J9-Eo9"/>
+                        <outlet property="idText" destination="4Xl-tJ-5Lg" id="6Cx-rr-z5b"/>
+                        <outlet property="name" destination="smi-yJ-mcY" id="Bdb-7B-1pQ"/>
+                        <outlet property="nameLast" destination="mOX-ga-fSW" id="L8Y-Hr-vcI"/>
+                        <outlet property="signUpButton" destination="4DZ-EL-R5R" id="dQR-bI-3f8"/>
+                        <outlet property="termsControl" destination="6Ie-GJ-Akd" id="6YI-A5-let"/>
+                        <outlet property="top" destination="iW5-nr-k59" id="3Zy-wd-L1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cm-aJ-cFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3082.608695652174" y="77.678571428571431"/>
         </scene>
         <!--Login-->
         <scene sceneID="fEg-31-bQK">
@@ -107,14 +328,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-x9-UVq">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="soham@test.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-x9-UVq">
                                 <rect key="frame" x="47" y="192" width="319" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74265749541122528" green="0.78140940148827898" blue="0.7967874981431966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61k-il-kiJ">
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61k-il-kiJ">
                                 <rect key="frame" x="47" y="255" width="319" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74265749540000003" green="0.78140940150000004" blue="0.79678749810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -138,28 +359,88 @@
                     <connections>
                         <outlet property="email" destination="TwR-x9-UVq" id="J3i-eA-E5P"/>
                         <outlet property="password" destination="61k-il-kiJ" id="2hf-Qy-tyT"/>
-                        <segue destination="vvT-WK-X52" kind="show" id="Hie-1B-u1w"/>
+                        <segue destination="vvT-WK-X52" kind="show" identifier="signIn" id="Hie-1B-u1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkl-lZ-tm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2124.6376811594205" y="-644.19642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Cloud9 Admin-->
         <scene sceneID="dtv-bs-Ceg">
             <objects>
-                <viewController id="vvT-WK-X52" sceneMemberID="viewController">
+                <viewController id="vvT-WK-X52" customClass="AdminHomeVC" customModule="Cloud9_esports" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fsU-ke-kjZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good to see you, Soham." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8U-Lf-o7g">
+                                <rect key="frame" x="20" y="108" width="374" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jJ8-A3-8Od">
+                                <rect key="frame" x="20" y="291" width="374" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wU2-9a-sGh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.23529411759999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TTq-Ms-Sx9"/>
+                    <navigationItem key="navigationItem" title="Cloud9 Admin" id="TTq-Ms-Sx9">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="kPp-aU-r0I">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="logout:" destination="vvT-WK-X52" id="vai-xe-FTD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jJ8-A3-8Od" id="B0Y-Sx-HeT"/>
+                        <segue destination="OBL-EU-jdR" kind="show" identifier="goToTeam" id="Sjq-wT-h4c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8d1-av-4lP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="-644"/>
+            <point key="canvasLocation" x="3082.608695652174" y="-644.19642857142856"/>
+        </scene>
+        <!--TeamVC-->
+        <scene sceneID="ye2-K9-v8J">
+            <objects>
+                <viewController id="OBL-EU-jdR" customClass="TeamVC" customModule="Cloud9_esports" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LlJ-ZJ-wu1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXC-qy-GV0">
+                                <rect key="frame" x="20" y="112" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WHE-9o-gfF"/>
+                        <color key="backgroundColor" name="Background"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ynu-JG-rtX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="jpK-sn-UBD">
+                            <color key="tintColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="edit:" destination="OBL-EU-jdR" id="pLX-fV-enQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="teamLabel" destination="uXC-qy-GV0" id="PxU-9m-Mj7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me6-zj-bcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3992.753623188406" y="-644.19642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QHE-Oy-Jk5">
@@ -169,6 +450,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wwr-MM-y9W">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.4392156862745098" green="0.62352941176470589" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.25490196078431371" green="0.23529411764705882" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
@@ -188,11 +470,17 @@
     <resources>
         <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="icloud.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Background">
+            <color red="0.25490196078431371" green="0.23529411764705882" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

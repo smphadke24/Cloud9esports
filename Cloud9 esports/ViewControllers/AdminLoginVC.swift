@@ -43,6 +43,7 @@ class AdminLoginVC: UIViewController, UITextFieldDelegate {
                     return
                 }
                 print("Successfully signed in \(em)!")
+                self.performSegue(withIdentifier: "signIn", sender: self)
             }
         }
     }
