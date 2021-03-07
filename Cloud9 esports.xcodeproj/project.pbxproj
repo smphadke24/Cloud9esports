@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88100C4925F4983600C2CD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88100C4825F4983600C2CD8D /* AppDelegate.swift */; };
+		88100C4B25F4983600C2CD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88100C4A25F4983600C2CD8D /* SceneDelegate.swift */; };
+		88100C4D25F4983600C2CD8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88100C4C25F4983600C2CD8D /* ViewController.swift */; };
+		88100C5025F4983600C2CD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88100C4E25F4983600C2CD8D /* Main.storyboard */; };
+		88100C5225F4983800C2CD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88100C5125F4983800C2CD8D /* Assets.xcassets */; };
+		88100C5525F4983800C2CD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88100C5325F4983800C2CD8D /* LaunchScreen.storyboard */; };
+		88100C6025F4983800C2CD8D /* Cloud9_esportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88100C5F25F4983800C2CD8D /* Cloud9_esportsTests.swift */; };
+		88100C6B25F4983800C2CD8D /* Cloud9_esportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88100C6A25F4983800C2CD8D /* Cloud9_esportsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88100C5C25F4983800C2CD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88100C3D25F4983600C2CD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88100C4425F4983600C2CD8D;
+			remoteInfo = "Cloud9 esports";
+		};
+		88100C6725F4983800C2CD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88100C3D25F4983600C2CD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88100C4425F4983600C2CD8D;
+			remoteInfo = "Cloud9 esports";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88100C4525F4983600C2CD8D /* Cloud9 esports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloud9 esports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88100C4825F4983600C2CD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88100C4A25F4983600C2CD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88100C4C25F4983600C2CD8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88100C4F25F4983600C2CD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88100C5125F4983800C2CD8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88100C5425F4983800C2CD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88100C5625F4983800C2CD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88100C5B25F4983800C2CD8D /* Cloud9 esportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cloud9 esportsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88100C5F25F4983800C2CD8D /* Cloud9_esportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9_esportsTests.swift; sourceTree = "<group>"; };
+		88100C6125F4983800C2CD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88100C6625F4983800C2CD8D /* Cloud9 esportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cloud9 esportsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88100C6A25F4983800C2CD8D /* Cloud9_esportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9_esportsUITests.swift; sourceTree = "<group>"; };
+		88100C6C25F4983800C2CD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88100C4225F4983600C2CD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C5825F4983800C2CD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C6325F4983800C2CD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88100C3C25F4983600C2CD8D = {
+			isa = PBXGroup;
+			children = (
+				88100C4725F4983600C2CD8D /* Cloud9 esports */,
+				88100C5E25F4983800C2CD8D /* Cloud9 esportsTests */,
+				88100C6925F4983800C2CD8D /* Cloud9 esportsUITests */,
+				88100C4625F4983600C2CD8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88100C4625F4983600C2CD8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88100C4525F4983600C2CD8D /* Cloud9 esports.app */,
+				88100C5B25F4983800C2CD8D /* Cloud9 esportsTests.xctest */,
+				88100C6625F4983800C2CD8D /* Cloud9 esportsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88100C4725F4983600C2CD8D /* Cloud9 esports */ = {
+			isa = PBXGroup;
+			children = (
+				88100C4825F4983600C2CD8D /* AppDelegate.swift */,
+				88100C4A25F4983600C2CD8D /* SceneDelegate.swift */,
+				88100C4C25F4983600C2CD8D /* ViewController.swift */,
+				88100C4E25F4983600C2CD8D /* Main.storyboard */,
+				88100C5125F4983800C2CD8D /* Assets.xcassets */,
+				88100C5325F4983800C2CD8D /* LaunchScreen.storyboard */,
+				88100C5625F4983800C2CD8D /* Info.plist */,
+			);
+			path = "Cloud9 esports";
+			sourceTree = "<group>";
+		};
+		88100C5E25F4983800C2CD8D /* Cloud9 esportsTests */ = {
+			isa = PBXGroup;
+			children = (
+				88100C5F25F4983800C2CD8D /* Cloud9_esportsTests.swift */,
+				88100C6125F4983800C2CD8D /* Info.plist */,
+			);
+			path = "Cloud9 esportsTests";
+			sourceTree = "<group>";
+		};
+		88100C6925F4983800C2CD8D /* Cloud9 esportsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88100C6A25F4983800C2CD8D /* Cloud9_esportsUITests.swift */,
+				88100C6C25F4983800C2CD8D /* Info.plist */,
+			);
+			path = "Cloud9 esportsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88100C4425F4983600C2CD8D /* Cloud9 esports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88100C6F25F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esports" */;
+			buildPhases = (
+				88100C4125F4983600C2CD8D /* Sources */,
+				88100C4225F4983600C2CD8D /* Frameworks */,
+				88100C4325F4983600C2CD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cloud9 esports";
+			productName = "Cloud9 esports";
+			productReference = 88100C4525F4983600C2CD8D /* Cloud9 esports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88100C5A25F4983800C2CD8D /* Cloud9 esportsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88100C7225F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esportsTests" */;
+			buildPhases = (
+				88100C5725F4983800C2CD8D /* Sources */,
+				88100C5825F4983800C2CD8D /* Frameworks */,
+				88100C5925F4983800C2CD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88100C5D25F4983800C2CD8D /* PBXTargetDependency */,
+			);
+			name = "Cloud9 esportsTests";
+			productName = "Cloud9 esportsTests";
+			productReference = 88100C5B25F4983800C2CD8D /* Cloud9 esportsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88100C6525F4983800C2CD8D /* Cloud9 esportsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88100C7525F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esportsUITests" */;
+			buildPhases = (
+				88100C6225F4983800C2CD8D /* Sources */,
+				88100C6325F4983800C2CD8D /* Frameworks */,
+				88100C6425F4983800C2CD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88100C6825F4983800C2CD8D /* PBXTargetDependency */,
+			);
+			name = "Cloud9 esportsUITests";
+			productName = "Cloud9 esportsUITests";
+			productReference = 88100C6625F4983800C2CD8D /* Cloud9 esportsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88100C3D25F4983600C2CD8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					88100C4425F4983600C2CD8D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					88100C5A25F4983800C2CD8D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88100C4425F4983600C2CD8D;
+					};
+					88100C6525F4983800C2CD8D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88100C4425F4983600C2CD8D;
+					};
+				};
+			};
+			buildConfigurationList = 88100C4025F4983600C2CD8D /* Build configuration list for PBXProject "Cloud9 esports" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88100C3C25F4983600C2CD8D;
+			productRefGroup = 88100C4625F4983600C2CD8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88100C4425F4983600C2CD8D /* Cloud9 esports */,
+				88100C5A25F4983800C2CD8D /* Cloud9 esportsTests */,
+				88100C6525F4983800C2CD8D /* Cloud9 esportsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88100C4325F4983600C2CD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88100C5525F4983800C2CD8D /* LaunchScreen.storyboard in Resources */,
+				88100C5225F4983800C2CD8D /* Assets.xcassets in Resources */,
+				88100C5025F4983600C2CD8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C5925F4983800C2CD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C6425F4983800C2CD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88100C4125F4983600C2CD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88100C4D25F4983600C2CD8D /* ViewController.swift in Sources */,
+				88100C4925F4983600C2CD8D /* AppDelegate.swift in Sources */,
+				88100C4B25F4983600C2CD8D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C5725F4983800C2CD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88100C6025F4983800C2CD8D /* Cloud9_esportsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88100C6225F4983800C2CD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88100C6B25F4983800C2CD8D /* Cloud9_esportsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88100C5D25F4983800C2CD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88100C4425F4983600C2CD8D /* Cloud9 esports */;
+			targetProxy = 88100C5C25F4983800C2CD8D /* PBXContainerItemProxy */;
+		};
+		88100C6825F4983800C2CD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88100C4425F4983600C2CD8D /* Cloud9 esports */;
+			targetProxy = 88100C6725F4983800C2CD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88100C4E25F4983600C2CD8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88100C4F25F4983600C2CD8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88100C5325F4983800C2CD8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88100C5425F4983800C2CD8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88100C6D25F4983800C2CD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88100C6E25F4983800C2CD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88100C7025F4983800C2CD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esports";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88100C7125F4983800C2CD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esports";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88100C7325F4983800C2CD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esportsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esportsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloud9 esports.app/Cloud9 esports";
+			};
+			name = Debug;
+		};
+		88100C7425F4983800C2CD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esportsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esportsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloud9 esports.app/Cloud9 esports";
+			};
+			name = Release;
+		};
+		88100C7625F4983800C2CD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esportsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esportsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cloud9 esports";
+			};
+			name = Debug;
+		};
+		88100C7725F4983800C2CD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				INFOPLIST_FILE = "Cloud9 esportsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sp.Cloud9-esportsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cloud9 esports";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88100C4025F4983600C2CD8D /* Build configuration list for PBXProject "Cloud9 esports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88100C6D25F4983800C2CD8D /* Debug */,
+				88100C6E25F4983800C2CD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88100C6F25F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88100C7025F4983800C2CD8D /* Debug */,
+				88100C7125F4983800C2CD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88100C7225F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esportsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88100C7325F4983800C2CD8D /* Debug */,
+				88100C7425F4983800C2CD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88100C7525F4983800C2CD8D /* Build configuration list for PBXNativeTarget "Cloud9 esportsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88100C7625F4983800C2CD8D /* Debug */,
+				88100C7725F4983800C2CD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88100C3D25F4983600C2CD8D /* Project object */;
+}
