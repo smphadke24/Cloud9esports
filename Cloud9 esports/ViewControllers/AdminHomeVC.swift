@@ -15,6 +15,7 @@ class AdminHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     var teams: [(name: String, game: String, members: [String])] = []
     var images: [String] = []
     var selected: Int?
+    var members: [(name: String, game: String)] = []
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,9 +26,9 @@ class AdminHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "TeamsTableViewCell", bundle: nil), forCellReuseIdentifier: "reusableTeamCell")
-        tableView.rowHeight = 100
+        tableView.rowHeight = 110
         
-        db.collection("teams").getDocuments { (qSnap, err) in
+        db.collection("teams").getDocuments { [self] (qSnap, err) in
             if let e = err {
                 print("Error getting team data from Firestore - \(e)")
             } else {
@@ -42,13 +43,30 @@ class AdminHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 }
                 self.tableView.reloadData()
                 self.navigationController?.navigationItem.hidesBackButton = true
+                db.collection("signUpData").getDocuments { [self] (qsnap, err) in
+                    if let er = err {
+                        print("ERROR")
+                    } else {
+                        for doc in qsnap!.documents {
+                            let data = doc.data()
+                            if let nameN = doc.documentID as? String, let gameN = data["tournament"] as? String {
+                                members.append((name: nameN, game: gameN))
+                            }
+                        }
+                    }
+                }
             }
         }
-        
     }
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
-        
+//        do {
+//            try FirebaseAuth.Auth.auth().signOut()
+//
+//        } catch (Error error) {
+//            print("Unable to sign out - \(error)")
+//            return
+//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +77,7 @@ class AdminHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusableTeamCell") as! TeamsTableViewCell
         cell.name.text = teams[indexPath.row].name
         cell.imgView.image = UIImage(named: images[indexPath.row])
-        cell.memberCount.text = "\(teams[indexPath.row].members.count)  Members"
+        //cell.memberCount.text = "\(teams[indexPath.row].members.count - 1)  Members"
         return cell
     }
     
@@ -74,7 +92,7 @@ class AdminHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToTeam" {
             let dest = segue.destination as! TeamVC
-            dest.members = teams[selected!].members
+            dest.members = members
             dest.teamTitle = teams[selected!].name
             dest.game = teams[selected!].game
         }

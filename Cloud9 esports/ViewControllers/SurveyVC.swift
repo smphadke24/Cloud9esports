@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import FirebaseFirestore
+import Alamofire
 
 class SurveyVC: UIViewController, UITextFieldDelegate {
     let db = Firestore.firestore()
@@ -84,33 +85,29 @@ class SurveyVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var termsControl: UISegmentedControl!
     
     func activateBot(_ dat: [String: String]) {
+        let params: Parameters = dat as Parameters
         
-        // prepare json data
-        let json = dat as [String: Any]
-
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-
-        // create post request
-        let url = URL(string: "https://SegfaultBot.saamstep.repl.co/formSubmit")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-
-        // insert json data to the request
-        request.httpBody = jsonData
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No data")
+        AF.request("https://segfaultbot-1.saamstep.repl.co/formSubmit", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
+            do {
+                guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
+                    print("Error: Cannot convert data to JSON object")
+                    return
+                }
+                guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
+                    print("Error: Cannot convert JSON object to Pretty JSON data")
+                    return
+                }
+                guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
+                    print("Error: Could print JSON in String")
+                    return
+                }
+                
+                print(prettyPrintedJson)
+            } catch {
+                print("Error: Trying to convert JSON data to string")
                 return
             }
-            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let responseJSON = responseJSON as? [String: Any] {
-                print(responseJSON)
-                print("^ JSON response ^")
-            }
-            print("done with request")
         }
-        task.resume()
     }
     
 }

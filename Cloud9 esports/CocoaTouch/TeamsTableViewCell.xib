@@ -24,12 +24,6 @@
                             <constraint firstAttribute="width" constant="89" id="pWw-1N-F1W"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr8-ed-g9N">
-                        <rect key="frame" x="107" y="10" width="207" height="30"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                        <color key="textColor" red="0.64841900289999999" green="0.76580185759999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right.doc.on.clipboard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Xr-z67">
                         <rect key="frame" x="326" y="8.5" width="40" height="83"/>
                         <color key="tintColor" red="0.43921568630000002" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,51 +31,35 @@
                             <constraint firstAttribute="width" constant="40" id="VfW-nc-709"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-qw-Sb0">
-                        <rect key="frame" x="153" y="63" width="161" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr8-ed-g9N">
+                        <rect key="frame" x="109" y="34" width="207" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="eTY-Sk-8lA"/>
+                            <constraint firstAttribute="height" constant="30" id="XOX-cg-mZu"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                         <color key="textColor" red="0.64841900289999999" green="0.76580185759999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kel-RY-bNA">
-                        <rect key="frame" x="107" y="55" width="35" height="34"/>
-                        <color key="tintColor" red="0.64841900289999999" green="0.76580185759999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="35" id="3OW-kg-l5e"/>
-                            <constraint firstAttribute="width" constant="35" id="crZ-wV-LoN"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="0.2901960784" green="0.2784313725" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
-                    <constraint firstItem="rqp-qw-Sb0" firstAttribute="top" secondItem="Gr8-ed-g9N" secondAttribute="bottom" constant="23" id="6t0-Pr-tCt"/>
-                    <constraint firstItem="kel-RY-bNA" firstAttribute="top" secondItem="Gr8-ed-g9N" secondAttribute="bottom" constant="14.5" id="G0o-Bj-uqY"/>
                     <constraint firstAttribute="bottom" secondItem="r07-Xr-z67" secondAttribute="bottom" constant="10" id="TDb-2S-GXv"/>
                     <constraint firstAttribute="bottom" secondItem="HEq-jy-LbF" secondAttribute="bottom" constant="6" id="WV3-hZ-WVo"/>
-                    <constraint firstAttribute="bottom" secondItem="Gr8-ed-g9N" secondAttribute="bottom" constant="60" id="bLf-JY-uv0"/>
-                    <constraint firstItem="r07-Xr-z67" firstAttribute="leading" secondItem="Gr8-ed-g9N" secondAttribute="trailing" constant="12" id="c6H-S1-xa0"/>
+                    <constraint firstAttribute="bottom" secondItem="Gr8-ed-g9N" secondAttribute="bottom" constant="36" id="bLf-JY-uv0"/>
+                    <constraint firstItem="r07-Xr-z67" firstAttribute="leading" secondItem="Gr8-ed-g9N" secondAttribute="trailing" constant="10" id="c6H-S1-xa0"/>
                     <constraint firstItem="r07-Xr-z67" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ekR-mo-kJs"/>
-                    <constraint firstItem="kel-RY-bNA" firstAttribute="leading" secondItem="HEq-jy-LbF" secondAttribute="trailing" constant="12" id="eu3-US-UQ9"/>
-                    <constraint firstItem="Gr8-ed-g9N" firstAttribute="leading" secondItem="HEq-jy-LbF" secondAttribute="trailing" constant="12" id="jFT-sg-Ojz"/>
-                    <constraint firstItem="Gr8-ed-g9N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lsR-Xn-a2E"/>
+                    <constraint firstItem="Gr8-ed-g9N" firstAttribute="leading" secondItem="HEq-jy-LbF" secondAttribute="trailing" constant="14" id="jFT-sg-Ojz"/>
+                    <constraint firstItem="Gr8-ed-g9N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="lsR-Xn-a2E"/>
                     <constraint firstAttribute="trailing" secondItem="r07-Xr-z67" secondAttribute="trailing" constant="8" id="lsw-kh-u31"/>
                     <constraint firstItem="HEq-jy-LbF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="o0W-CB-uJh"/>
-                    <constraint firstItem="rqp-qw-Sb0" firstAttribute="leading" secondItem="kel-RY-bNA" secondAttribute="trailing" constant="11" id="osI-co-wdM"/>
-                    <constraint firstAttribute="bottom" secondItem="kel-RY-bNA" secondAttribute="bottom" constant="10.5" id="p8M-ZY-GFh"/>
-                    <constraint firstItem="r07-Xr-z67" firstAttribute="leading" secondItem="rqp-qw-Sb0" secondAttribute="trailing" constant="12" id="r4O-RI-3Wk"/>
-                    <constraint firstItem="r07-Xr-z67" firstAttribute="leading" secondItem="Gr8-ed-g9N" secondAttribute="trailing" constant="12" id="s6E-FL-zlq"/>
+                    <constraint firstItem="r07-Xr-z67" firstAttribute="leading" secondItem="Gr8-ed-g9N" secondAttribute="trailing" constant="10" id="s6E-FL-zlq"/>
                     <constraint firstItem="HEq-jy-LbF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="tUZ-rc-f0F"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="rqp-qw-Sb0" secondAttribute="bottom" constant="5" id="uOU-Sb-Qg2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="Background"/>
             <connections>
                 <outlet property="imgView" destination="HEq-jy-LbF" id="SRr-R2-RPz"/>
-                <outlet property="memberCount" destination="rqp-qw-Sb0" id="gly-J0-Vx9"/>
                 <outlet property="myView" destination="H2p-sc-9uM" id="hS4-xA-vAv"/>
                 <outlet property="name" destination="Gr8-ed-g9N" id="cVH-5e-UCZ"/>
             </connections>
@@ -90,9 +68,8 @@
     </objects>
     <resources>
         <image name="arrow.right.doc.on.clipboard" catalog="system" width="116" height="128"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="Background">
-            <color red="0.25490196078431371" green="0.23529411764705882" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25499999523162842" green="0.23499999940395355" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

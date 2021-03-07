@@ -26,6 +26,8 @@
 		88B37C0025F5643000C2066F /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B37BFE25F5643000C2066F /* TeamsTableViewCell.swift */; };
 		88B37C0125F5643000C2066F /* TeamsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B37BFF25F5643000C2066F /* TeamsTableViewCell.xib */; };
 		88B37C0625F56A6500C2066F /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B37C0525F56A6500C2066F /* TeamVC.swift */; };
+		88B37C2325F57F0800C2066F /* MembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B37C2125F57F0800C2066F /* MembersTableViewCell.swift */; };
+		88B37C2425F57F0800C2066F /* MembersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B37C2225F57F0800C2066F /* MembersTableViewCell.xib */; };
 		97A01B7DDB3CE116D1821F1C /* Pods_Cloud9_esportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D885E17D28707DD33BA475 /* Pods_Cloud9_esportsTests.framework */; };
 		DC45B9327170A91025185D16 /* Pods_Cloud9_esports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96D0CD840F08E01D9EBA1E /* Pods_Cloud9_esports.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		88B37BFE25F5643000C2066F /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
 		88B37BFF25F5643000C2066F /* TeamsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsTableViewCell.xib; sourceTree = "<group>"; };
 		88B37C0525F56A6500C2066F /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
+		88B37C2125F57F0800C2066F /* MembersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewCell.swift; sourceTree = "<group>"; };
+		88B37C2225F57F0800C2066F /* MembersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MembersTableViewCell.xib; sourceTree = "<group>"; };
 		B05CAD06BF71F10A62F5BCAE /* Pods-Cloud9 esportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloud9 esportsTests.release.xcconfig"; path = "Target Support Files/Pods-Cloud9 esportsTests/Pods-Cloud9 esportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B50401E0029CC02A721D200D /* Pods-Cloud9 esports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloud9 esports.debug.xcconfig"; path = "Target Support Files/Pods-Cloud9 esports/Pods-Cloud9 esports.debug.xcconfig"; sourceTree = "<group>"; };
 		C245DF3DEA3F77B77390FB9F /* Pods-Cloud9 esports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloud9 esports.release.xcconfig"; path = "Target Support Files/Pods-Cloud9 esports/Pods-Cloud9 esports.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				88B37BE925F4ACD900C2066F /* SignUpTableViewCell.swift */,
+				88B37C2125F57F0800C2066F /* MembersTableViewCell.swift */,
+				88B37C2225F57F0800C2066F /* MembersTableViewCell.xib */,
 				88B37BFE25F5643000C2066F /* TeamsTableViewCell.swift */,
 				88B37BFF25F5643000C2066F /* TeamsTableViewCell.xib */,
 				88B37BEA25F4ACD900C2066F /* SignUpTableViewCell.xib */,
@@ -325,6 +331,7 @@
 				88B37C0125F5643000C2066F /* TeamsTableViewCell.xib in Resources */,
 				88B37BEC25F4ACD900C2066F /* SignUpTableViewCell.xib in Resources */,
 				88100C5525F4983800C2CD8D /* LaunchScreen.storyboard in Resources */,
+				88B37C2425F57F0800C2066F /* MembersTableViewCell.xib in Resources */,
 				88100C5225F4983800C2CD8D /* Assets.xcassets in Resources */,
 				88100C5025F4983600C2CD8D /* Main.storyboard in Resources */,
 				88B37BCC25F4A29900C2066F /* GoogleService-Info.plist in Resources */,
@@ -462,6 +469,7 @@
 				88B37BF525F4BC1A00C2066F /* SurveyVC.swift in Sources */,
 				88B37BEB25F4ACD900C2066F /* SignUpTableViewCell.swift in Sources */,
 				88100C4B25F4983600C2CD8D /* SceneDelegate.swift in Sources */,
+				88B37C2325F57F0800C2066F /* MembersTableViewCell.swift in Sources */,
 				88B37BC725F4A1E600C2066F /* CompetitorHomeVC.swift in Sources */,
 				88B37BFA25F55F7E00C2066F /* AdminHomeVC.swift in Sources */,
 				88B37C0625F56A6500C2066F /* TeamVC.swift in Sources */,
